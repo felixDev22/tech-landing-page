@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --back-clr: #121212;
+  --primary-clr: #fc6704;
+  --secondary-clr: #3f11fa;
+  --text-clr: #fff;
+  --orange-clr: #fa6511;
+
+  --block-clr: #1f2425;
+  --hover-clr: #0532fa;
+  --spacing: 1px;
+  --spacing-2: 7px;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: inter, sans-serif;
+  background-color: var(--back-clr);
+  color: white;
+}
+
+p {
+  letter-spacing: var(--spacing);
+  font-weight: 300;
+}
+
+.btn {
+  padding: 15px 50px;
+  border-radius: 20px;
+  background: var(--orange-clr);
+  color: var(--text-clr);
+  letter-spacing: var(--spacing);
+  margin: 40px 0 20px 0;
+  transition: 0.5s ease;
+}
+
+button a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--hover-clr);
+  color: #fff;
+  border: solid 1px #fff;
+  font-weight: 700;
+  box-shadow: 0 0 2rem var(--hover-clr);
+}
+
+.btn-2 {
+  background: var(--block-clr);
+  color: var(--hover-clr);
+  margin-left: 20px;
+}
+
+.btn-2:hover {
+  background: var(--primary-clr);
+  box-shadow: 0 0 1rem var(--primary-clr);
+  color: #000;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-wrapper {
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 2rem 10%;
+  border-bottom: solid 2px var(--block-clr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  background: var(--back-clr);
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 25px;
+  color: var(--primary-clr);
+}
+
+.navbar {
+  letter-spacing: var(--spacing);
+}
+
+.navbar a {
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 25px;
+  color: #fff;
+}
+
+.navbar a:hover,
+.active {
+  color: var(--hover-clr);
+}
+
+#menu,
+#close {
+  font-size: 1.7rem;
+  color: var(--text-clr);
+  display: none;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+.tech-man {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  right: 8%;
+  width: 40%;
+}
+
+.overlay {
+  background: rgba(51, 33, 68, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.hero-content {
+  margin-top: 8%;
+  width: 60%;
+}
+
+/* .hero-content h1 {
+  font-size: 30px;
+  color: var(--primary-clr);
+  text-align: center;
+} */
+
+.hero-intro {
+  position: absolute;
+  text-align: left;
+  left: 8%;
+}
+
+.hero-intro h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  letter-spacing: var(--spacing-2);
+}
+
+.hero-intro h1 {
+  font-size: 6rem;
+  line-height: 7rem;
+  color: var(--primary-clr);
+}
+
+.intro {
+  line-height: 25px;
+  text-align: left;
+  width: 60%;
+}
